@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+
+.header {
+  background: #778899;
+  text-align: center;
+  list-style-type: none;
+  color: white;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-image: url(../images/cssbackground.png);
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-indent: .25in;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+}
+
+.pageheading {
+  text-align: center;
+  background-color: white;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  font-family: 'Bungee Shade', cursive;
+}
+
+
+
+.h2 {
+  clear: both;
+  padding: 25px;
+  text-align: center;
+}
+
+.nav {
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav li{
+  display: inline;
+}
+
+.nav a{
+  display: inline-block;
+  padding: 10px;
+}
+
+#bottom {
+  text-indent: 0;
+  font-size: 16px;
+  text-align: center;
+  background-color: #778899;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.animation ul {
+  position: relative;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.animation li {
+  float: left;
+  width: 350px;
+}
+
+.animation img {
+  width: 100%;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.animation li:nth-child(2) > img {
+  animation-delay: 3s;
+}
+
+.animation li:nth-child(3) > img {
+  animation-delay: 6s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+.guessgame {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: 0;
+}
+
+.guessgame p {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  width: fit-content;
+}
+
+.gameimage {
+  display: none;
+}
+
+.gameimage h3 {
+  background-color: white;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+button {
+background:    #ffffff;
+border:        1px solid #778899;
+border-radius: 5px;
+box-shadow:    0 1px #bbccee;
+padding:       10px 25px;
+color:         #778899;
+display:       inline-block;
+font:          normal 700 24px/1 "Bungee Shade", cursive;
+text-align:    center;
+text-shadow:   none;
+}
+
+.lost {
+  display: none;
+}
+
+.why {
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  padding: 5px;
+  border: 5px solid black;
+  display: none;
+  width: fit-content;
+  background-color: goldenrod;
+}
